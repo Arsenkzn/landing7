@@ -183,7 +183,7 @@ body {
 .terminal-container {
   display: flex;
   height: 100vh;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s;
 }
 
