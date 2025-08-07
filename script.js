@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let progress = 47;
 
     const progressInterval = setInterval(() => {
-      progress += Math.random() * 5;
+      progress += Math.random() * 6;
       if (progress >= 100) {
         progress = 100;
         clearInterval(progressInterval);
@@ -229,14 +229,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Add initial log entries
             addLogEntry("SYSTEM READY");
             addLogEntry("AWAITING USER INPUT");
-          }, 500);
-        }, 300);
+          }, 100);
+        }, 100);
       }
       progressBar.style.width = `${progress}%`;
       document.querySelector(
         ".progress-text"
       ).textContent = `DECRYPTING FILES... ${Math.floor(progress)}%`;
-    }, 300);
+    }, 100);
   }
 
   // Close initialization popup
